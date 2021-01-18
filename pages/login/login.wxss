@@ -1,0 +1,198 @@
+/* pages/login/login.wxss */
+/* 授权登录 */
+.mask-dl {
+  display: flex;
+  flex-direction:column;
+  width: 558rpx;
+  margin: 0 auto;
+  margin-top: 166rpx;
+  border-radius: 35rpx;
+  background-color: #FFFFFF;
+}
+.mask-tible {
+  width: 500rpx;
+  text-align: center;
+  line-height: 102rpx;
+  margin: 0 auto;
+  font-size: 34rpx;
+  font-weight: bold;
+  color: black;
+  border-bottom: 1px solid #E5E5E5;
+}
+.mask-tibles {
+  font-size: 26rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  margin-bottom: 42rpx;
+  color: #666666;
+}
+.headView {
+  display:flex;
+  /* flex-direction:column; */
+  justify-content: center;
+   
+ }
+ 
+.headImageView {
+  width: 30%;
+  display: flex;
+  text-align: start;
+}
+.mask-buttom {
+  margin: 0 auto;
+  margin-top: 42rpx;
+  /* height: 62rpx; */
+  font-size: 28rpx;
+  /* width: 420rpx; */
+  /* background: #000; */
+}
+.buttom-two {
+  height: 62rpx;
+  font-size: 24rpx;
+  line-height: 62rpx;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #FF0000;
+  border-radius: 35rpx;
+  padding:0;
+}
+
+.register-deng {
+  width: 183rpx;
+  height: 62rpx;
+  margin: 0 auto;
+  line-height: 62rpx;
+  border-radius: 35rpx;
+  text-align: center;
+  background-color: #007AFF;
+  color: #FFFFFF;
+}
+/* 手机号登录 */
+page{
+  background: #fff;
+}
+.container{
+  background: #fff;
+  padding: 60rpx;
+}
+.wrapper{
+  position:relative;
+  z-index: 90;
+  background: #fff;
+  padding-bottom: 40upx;
+}
+.back-btn{
+  z-index: 9999;
+  font-size: 40rpx;
+}
+.left-top-sign{
+  font-size: 120rpx;
+ 
+}
+/* ---------------------------- */
+.right-top-sign {
+  z-index: 95;
+}
+.right-top-sign:before, .right-top-sign:after{
+  display:block;
+  content:"";
+  width: 400rpx;
+  height: 80rpx;
+  background: #b4f3e2;
+}
+.right-top-sign:before{
+  transform: rotate(50deg);
+  border-radius: 0 50px 0 0;
+}
+.right-top-sign:after{
+
+  border-radius: 50rpx 0 0 0;
+  /* background: pink; */
+}
+/* ---------------------------- */
+.left-bottom-sign{
+
+  border: 100upx solid #d0d1fd;
+  border-radius: 50%;
+  padding: 180rpx;
+}
+.welcome{
+  text-align: center;
+  font-size:50rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(51,51,51,1);
+  /* text-shadow: 1px 0px 1px rgba(0,0,0,.3); */
+}
+.input-content{
+  padding: 40rpx 0;
+  
+}
+/* ------------------------------------------ */
+
+.input-item{
+  display:flex;
+  flex: 1;
+  /* flex-direction: column; */
+  align-items:flex-start;
+  justify-content: center;
+  padding-left:30rpx;
+  height: 120rpx;
+  /* border-radius: 8px; */
+  margin-bottom: 50rpx;
+  /* background-color: #f6f6f6; */
+  border-bottom: 1px solid #EAEAEA;
+}
+input-item:last-child{
+  margin-bottom: 0;
+}
+.input-box {
+  display:flex;
+  /* background-color: #f6f6f6; */
+}
+.input-butt {
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(104,158,238,1);
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.tit{
+  margin-right: 20rpx;
+  font-size: 38rpx;
+  height: 109rpx;
+  line-height: 109rpx;
+}
+
+input{
+  height: 109rpx;
+  width: 100%;
+}	
+/* ------------------------------------------ */
+.confirm-btn{
+  width: 630rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  border-radius: 50px;
+  margin-top: 70rpx;
+  color: #FFFFFF;
+  background-color: #548DE0;
+}
+.confirm-btn:after{
+  border-radius: 100px;
+}
+.forget-section{
+  text-align: center;
+  margin-top: 40rpx;
+}
+.register-section{
+
+  width: 100%;
+  text-align: center;
+}
+.register-section text{
+  margin-left: 10rpx;
+}

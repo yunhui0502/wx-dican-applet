@@ -1,0 +1,29 @@
+/* pages/withregard/withregard.wxss */
+image {
+  width: 100%;
+  height: 100%;
+}
+
+.text-box {
+  padding: 20rpx
+}
+
+.text-h6 {
+  font-size: 36rpx;
+  font-family: PingFang SC;
+  font-weight: 700;
+  color: #333
+}
+
+.text-text {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  color: #333
+}
+
+.text-item {
+  margin: 35rpx 0
+}
+.swiper{
+  height: 340rpx;
+}

@@ -1,0 +1,58 @@
+<!--pages/design/design.wxml-->
+<!-- <view class="text-box">
+	<image wx:for="{{activeList}}" data-index="{{index}}" style="height:{{auto[index].height}}px" bindload="autoImage" src="{{item.imageUrl}}" mode></image>
+</view> -->
+
+<view class="text-box">
+  <!-- <rich-text space="nbsp" nodes="{{htmlSnip}}"></rich-text> -->
+	<parser html="{{htmlSnip}}" />
+</view>
+
+<!-- 点赞 -->
+<view style="padding: 30px 16rpx;border-bottom: 1px solid #F3F3F3;" class="box-like">
+	<view bindtap="Praise" class="box-like-imag">
+		<image wx:if="{{countList.isPraise==2}}" style="width:40rpx;height:40rpx;" src="../../static/zan1.png"></image>
+		<image wx:if="{{countList.isPraise==3}}" style="width:40rpx;height:40rpx;" src="../../static/zan2.png"></image>
+		<text>{{countList.count}}</text>
+	</view>
+</view>
+<!-- 评论区 -->
+
+<view>
+<view style="height:44rpx;">
+	<view style="float: right;font-size: 28rpx;margin-top:10rpx">评论（{{count}}）</view>
+</view>
+	<view wx:for="{{commentList}}" style="font-size:24rpx;margin-bottom:10rpx;">
+		<view style="padding: 17px 16rpx;border-bottom: 1px solid #F3F3F3;">
+			<view>
+				<view style="display:flex;align-items:center;">
+					<!-- <image style="width:60rpx;height:60rpx;border-radius:50%;" src="{{img}}/goods/getFile?fileId={{item.avatar}}">
+								</image> -->
+					<view style="margin-left:16rpx;">
+						<view style="color:#151515;font-size:26rpx;border-bottom:10rpx">{{item.name}}</view>
+						<view style="color:#999999;font-size:24rpx;">{{item.content}}</view>
+					</view>
+				</view>
+				<!-- <view style="padding-left:70rpx;"><text style="color:#151515;">回复</text><text style="color:#999;">欢乐小可</text><text style="color:#999;">欢乐小可</text>
+								<text style="color:#151515;">:西安都进入春天啦，才想起来买东西</text>
+							</view>
+			<view style="padding-left:70rpx;">
+				<text style="color:#151515;">{{item.comment}}3</text>
+			</view> -->
+			</view>
+		</view>
+	</view>
+</view>
+
+<!-- 发表 -->
+<view style="height:50px;">
+	<view style="display:flex;align-items:center;justify-content:center; width:100%; background:#fff;position:fixed;bottom:0;height:50px;z-index:100px;">
+		<view style="display:flex;align-items:center;justify-content:space-around;width:100%;">
+			<view style="display:flex;align-items:center; background:#eee;width:70%;height:70rpx;border-radius:46rpx;">
+				<input value="{{form.comment}}" bindinput="bind" style="padding-left:30rpx; width:95%;" placeholder="{{huiuser}}"></input>
+			</view>
+			<view bindtap="pingjia" style="width:140rpx;height:34px; border-radius:10rpx; display:flex;align-items:center;justify-content:center;background:#FF0000;color:#fff;">发表</view>
+		</view>
+	</view>
+</view>
+

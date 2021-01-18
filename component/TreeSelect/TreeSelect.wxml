@@ -1,0 +1,48 @@
+<!--component/TreeSelect/TreeSelect.wxml-->
+<!--分类-->
+<view class="sou" bindtap="sousuo">
+	<image bindtap="swiTab" src="../../static/sousuo.png" class="sao-sou" />
+	<input type="text" class="input-sou" />
+</view>
+<!-- 主盒子 -->
+<view class="container">
+	<!-- 左侧栏 -->
+	<view class='nav_left'>
+		<view wx:for="{{activeList}}" :key="{{item.id}}" class="nav_left_items {{curNav == item.id ? 'active' : ''}}" bindtap="switchRightTab" data-id="{{item.id}}">
+			{{item.hfName}}
+		</view>
+		<view class="nav_left_items1">
+			商业
+		</view>
+		<!-- <view class="nav_left_items {{curNav == 1 ? 'active' : ''}}" bindtap="switchRightTab" data-id="1">
+        住宅
+      </view>
+      <view class="nav_left_items {{curNav == 2 ? 'active' : ''}}" bindtap="switchRightTab" data-id="2">
+        配建
+      </view>
+      <view class="nav_left_items {{curNav == 3 ? 'active' : ''}}" bindtap="switchRightTab" data-id="3">
+        地下车库
+      </view> -->
+	</view>
+	<!-- 右侧栏 -->
+	<view class="nav_right">
+		<view>
+			<view bindtap="swiTab" data-item="{{item}}" data-index="{{index}}" wx:for="{{slist1}}" class="nav_right_items">
+				<image src="{{item.imageUrl}}"></image>
+				<text>{{item.hfName}}</text>
+			</view>
+		</view>
+		<view wx:if="{{curNav==2}}">
+			<view wx:for="{{slist2}}" class="nav_right_items">
+				<image bindtap="swiTab" src="{{item.src}}"></image>
+				<text>{{item.text}}</text>
+			</view>
+		</view>
+		<view wx:if="{{curNav==3}}">
+			<view wx:for="{{slist3}}" class="nav_right_items">
+				<image bindtap="swiTab" src="{{item.src}}"></image>
+				<text>{{item.text}}</text>
+			</view>
+		</view>
+	</view>
+</view>

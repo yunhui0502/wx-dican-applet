@@ -1,0 +1,12 @@
+<!--pages/general-situation-survey/index.wxml-->
+<view class="text-box">
+	<!-- <image wx:for="{{Urllist}}" data-index="{{index}}" style="height:{{auto[index].height}}px" bindload="autoImage" src="{{item}}" mode></image> -->
+  <view bindtap="homePage" class="add-wrap" hover-class="plus-hover">
+    <image src="../../static/fh.png"></image>
+  </view>
+  <!-- <scroll-view scroll-y>{{htmlSnip}}</scroll-view> -->
+  <rich-text space="nbsp" nodes="{{htmlSnip}}"></rich-text>
+</view>
+<view style="height:{{height}}px">
+
+</view>

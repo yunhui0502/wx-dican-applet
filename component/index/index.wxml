@@ -1,0 +1,39 @@
+<!--component/index/index.wxml-->
+<!--轮播图-->
+
+<!-- <view wx:if="{{control}}" style="height:{{phoneHeight}}px;">
+  <image class="background" src="../../static/shanp.png" mode></image>
+	<button bindtap="showPopup" class="primary-button" >进入首页</button>
+	<popup bind:myevent='onMyevent' id='popup' 
+      title='请输入公司编号' 
+      btn_no='取消' 
+      btn_ok='确定'
+      bind:error="_error"  
+      bind:success="_success">
+  </popup>
+</view> -->
+
+<!-- <view class="container">
+	<swiper direction='vertical' class="swiper" style="height:{{phoneHeight-50}}px" indicator-dots="{{true}}" autoplay="{{false}}" interval="{{2000}}" duration="{{500}}">
+		<swiper-item wx:for="{{activeList}}" >
+			<image data-index="{{index}}" style="height:{{auto[index].height}}px" bindload="autoImage" src="{{item.imageUrl}}" mode></image>
+		</swiper-item>
+	</swiper>
+</view> -->
+
+<!-- <view>
+	<view wx:for="{{activeList}}">
+		<image data-index="{{index}}" style="height:{{auto[index].height}}px" bindload="autoImage" src="{{item.imageUrl}}" mode></image>
+	</view>
+</view> -->
+
+<view class="page-body">
+  <swiper class="swiper" style="height:{{phoneHeight-50}}px"  vertical="{{vertical}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block>
+     	<swiper-item wx:for="{{activeList}}" >
+			<image data-index="{{index}}"  bindload="autoImage" src="{{item.imageUrl}}" mode></image>
+		</swiper-item>
+    </block>
+  </swiper>
+</view>

@@ -1,0 +1,81 @@
+<!--pages/login/login.wxml-->
+<!-- <view wx:if="{{!isAuth}}">
+  <view class="mask-dl">
+    <text class="mask-tible">微信授权</text>
+    <view class="mask-tibles">申请获取以下权限</view>
+    <text class="mask-tibles">获得你的公开信息(昵称, 头像, 地址及性别)</text>
+  </view>
+  <view style="text-align: center;">
+    <view class='headView'>
+      <open-data class='headImageView' type="userAvatarUrl"></open-data>
+    </view>
+    <open-data type="userNickName"></open-data>
+  </view>
+  <view class="mask-buttom">
+    <button  style="height:62rpx;width:183rpx;" class="buttom-two" type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">微信授权</button>
+  </view>
+</view>
+ 
+ <view wx:else>
+  <view class="mask-dl">
+    <text class="mask-tible">登录页</text>
+    <view class="mask-tibles">申请获取以下权限</view>
+    <text class="mask-tibles">获得你的公开信息(昵称, 头像, 地址及性别)</text>
+  </view>
+  <view style="text-align: center;">
+  <view class='headView'>
+    <open-data class='headImageView' type="userAvatarUrl"></open-data>
+  </view>
+  <open-data type="userNickName"></open-data>
+  </view>
+  <view class="mask-buttom">
+    <view class="register-deng"  bindtap="onWechartLogin">登录</view>
+  </view>
+</view> -->
+
+	<view class="container">
+		<!-- <view class="left-bottom-sign"></view>
+		<view class="back-btn yticon icon-zuojiantou-up" ></view>
+		<view class="right-top-sign"></view> -->
+		<!-- 设置白色背景防止软键盘把下部绝对定位元素顶上来盖住输入框等 -->
+		<view class="wrapper">
+
+			<view class="welcome">
+				欢迎回来！
+			</view>
+			<view class="input-content">
+				<view class="input-item">
+					<text class="tit">+86</text>
+					<input 
+						type="number" 
+						value="" 
+						placeholder="请输入手机号码"
+						maxlength="11"
+            bindinput="bindModel"
+						data-key="mobile"
+					/>
+				</view>
+    <view class="input-box">
+				<view class="input-item">
+					<!-- <text class="tit">验证码</text> -->
+					<input 
+						type="mobile" 
+						value="{{code}}" 
+            bindinput="bindCode"
+						placeholder="请输入验证码"
+						placeholder-class="input-empty"
+						maxlength="4"
+					/>
+
+				</view>
+        <view class="input-butt">
+           <view bindtap="code">{{btntxt}}</view>
+        </view>
+      </view>
+			</view>
+			<button class="confirm-btn"  bindtap="logining">登录</button>
+			<!-- <view class="forget-section">
+				忘记密码?
+			</view> -->
+		</view>
+	</view>

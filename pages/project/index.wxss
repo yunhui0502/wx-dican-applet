@@ -1,0 +1,187 @@
+/* pages/project/index.wxss */
+@import '../../model/model.wxss';
+.button-cs {
+  /* width: 100rpx; */
+  height: 60rpx; 
+  font-size: 24rpx;
+  line-height: 60rpx; 
+  background-color: #FFFF;
+  border: 1px solid #FFFF;
+}
+
+.sao-sou {
+  width: 33rpx;
+  height: 33rpx;
+  margin: 21rpx 0 19rpx 20rpx;
+  /* background: #000; */
+}
+
+.input-sou {
+  /* text-indent: 10rpx; */
+  margin-left: 15rpx;
+  width: 660rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+}
+
+.sou {
+  display: flex;
+  width: 710rpx;
+  height: 72rpx;
+  margin-left: 20rpx;
+  margin-top: 27rpx;
+  background: #fff;
+  border-radius: 36rpx;
+  border: 1px solid #70bcf6;
+}
+
+/* .box {
+  display:flex;
+  justify-content : space-around;
+  flex-wrap: wrap;
+}
+.nav_right_items {
+  width: 40%;
+  padding: 20rpx;
+  margin: 20rpx 0;
+  text-align: center; 
+  border: 1px solid #70bcf6;
+}
+.nav_right_items:after {
+  content: "";
+  flex: auto; 
+ } */
+
+/* .box {
+  padding: 20rpx;
+} */
+.nav_right_items {
+  font-size: 30rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  border-bottom: 1px solid #cccc;
+}
+
+
+image {
+  width: 100%;
+  height: 100%
+}
+
+.p10 {
+  margin: 20rpx;
+}
+
+.box {
+  margin-top: 200rpx;
+  padding: 24rpx;
+  line-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.box-view {
+  flex: 33%;
+}
+
+.box-length {
+  font-size: 26rpx;
+  font-family: PangMenZhengDao;
+  font-weight: 700;
+  color: rgb(49, 47, 47);
+  flex: 33%;
+  /* height: 172rpx; */
+  height: 226rpx;
+  overflow: hidden;
+  text-align: center;
+  margin: 8rpx;
+  /* background-color: #f6f6f6; */
+  /* background-image: url(https://www.tjsichuang.cn:1443/api/product/goods/getFile?fileId=175);
+  background-size: 100% 100%; */
+}
+
+.image-1 {
+  /* background-image: url(data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCACsAN4DASIAAhEBAxEB/8QAGQABAQEBAQEAAAAAAAAAAAAAAAECAwQG/8QAHxABAQEAAgIDAQEAAAAAAAAAAAERAjEhcQNBUWGB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APsOXLWQARUAAAQAEVAEVAEVAEVAAQAAEAABAAQF38dvh+b653/XBNB6wAEVAAAEVAEVAAARFQBFQBFQAEAAAQAQEArXGYnGfdbB3AARUAAARUARUARUARUARUARUARUABAEEAXjN83pJNv8bBQAdwAEVAAAEABFQBFQBFQBFQBFQBABASgJJtO7kbkyASZ4UAAWeegdgAEVAAAEVAEVAEVAEAEABAARFQEqd3IrXGZ7AkxRQQXN6anHPYJOO9tzx0IDYACKgAACAAioAgAgAIACIqUESla48c9gceOe2gAWTScf1oCeOgAAXAaAAQAAAQAEABAAQAERUoIlWrx457AnHPaqZoI1IsmAAACmKCKAKACAAIqAAgAAICAIqAiVVkwCTPari4CSKAAKCKoAIAAA0ioAAAgAIqAIqAIAInfS99NSAkmNYYoIAAABGgAQAAAAAUAAEAABAAQEATtZN9NSYBJigAgAAALCKAgAAAAAAAt8UdOUlmuYCKgCKgCKgIs472cY0AAAigIKAhBYCgAgAAAAAC8Zb0SeXWSSeAf/2Q==);
+  background-size: 100% 100%; */
+  background-color: #D64D96;
+}
+
+.image-2 {
+  /* background-image: url(data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAD9AN4DASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAECAwb/xAAcEAEBAQEBAQEBAQAAAAAAAAAAARECMSFBUWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A9f11t+MKgAIAzatZtBZNv+NpJkxQAQFEAUABABY0kUEAAAAAAABHTnr8rACAAiVWbQKcTbqe3G5M+AKAIoAAAAAgLAWKkaBEUBAAAAAAAARFZoFZq1n24DXE/WjwAUAAAAAAQBUUFjTMaBAAQAAAAAAAGUq1mglXifrPtx0zIAoAAAAAAAIoCKgDUajEagKioAioAAAAAADFZq1mg1xPa0SZMUAAAAAAAAAAEABWoysBpFAQAEAAAAABzqczet/hWuZnINAAAAAAAAAAAAgqAqxCA0qRQQAEAAAAABx9sjqxx7a2AAAAAAAAAAAAAioCiKDUVmNAIqAIqAAAAAxzM5aRQAAAAAAAAAAAAAARUUFWMtQFRQERQEAAABAAAQFEUAAAAAAAAAAAABYig1BIoIACCoAACAAgAAAKIoAAAAAAAAAAAALGmWoAioAACAAhQoIAACAoAKAAAAAAAAAAAA1GVgNBAEAAABlKqUAABFQBUAVUUAAAAAAAAAAAAGorMagCKAgKDCKAIoCIoCAAKigoigAAAAAAAAAANRlYDQQBFAGAAAAQAEFQARQVUAUAAAAAAAAAAAFjTEagKADAAAAIKgCKgCKgKqKAqAKAAAAAAAAAAsQBuKzKsBlHTvmeuYEFgCIoCAAiNICKAKCgAAAAAAAAAAAARufWJNrtzMgP/9k=);
+  background-size: 100% 100%; */
+  background-color: rgb(33, 193, 233);
+}
+
+.image-3 {
+background-color: #ABD076;
+}
+
+.image-4 {
+  background-color: #E74C9D;
+}
+
+.image-5 {
+ background-color: #CED662;
+}
+
+.image-6 {
+background-color: #EA79B4;
+}
+
+.image-7 {
+ background-color: #F4AA6F;
+}
+
+.image-8 {
+  background-color: #F7BE70;
+}
+
+.length-text {
+
+  margin-top: 70rpx;
+  margin-bottom: 10rpx;
+}
+
+.box-height {
+  font-size: 26rpx;
+  font-family: PangMenZhengDao;
+  font-weight: 700;
+  color: rgb(49, 47, 47);
+  margin: 8rpx;
+  flex: 33%;
+  /* height: 253rpx;*/
+  height: 226rpx;
+  overflow: hidden;
+  /* line-height: 253rpx; */
+  text-align: center;
+  /* background-color: #f6f6f6; */
+  /* background-image: url(https://www.tjsichuang.cn:1443/api/product/goods/getFile?fileId=176);
+  background-size: 100% 100%; */
+}
+
+.height-text {
+  margin-top: 70rpx;
+  margin-bottom: 10rpx;
+
+}
+
+.box-image {
+  flex: 33%;
+  /* height: 335rpx; */
+  height: 226rpx;
+  margin: 8rpx;
+  box-sizing: border-box;
+  padding-top: 48rpx;
+}
+
+.box-text {
+   font-size: 46rpx;
+   font-weight: 700;
+   font-style: italic;
+   width: 50%;
+   /* text-align: center; */
+   margin: 0 auto;
+   line-height: 50rpx;
+}

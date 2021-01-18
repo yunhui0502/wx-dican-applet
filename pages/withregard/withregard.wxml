@@ -1,0 +1,31 @@
+<!--pages/withregard/withregard.wxml-->
+<view>
+	<swiper class="swiper" indicator-dots="{{true}}" autoplay="{{false}}" interval="{{2000}}" duration="{{500}}">
+		<swiper-item>
+			<image src="https://www.tjsichuang.cn:1443/api/product/goods/getFile?fileId=132" mode></image>
+		</swiper-item>
+		<swiper-item>
+			<image src="https://www.tjsichuang.cn:1443/api/product/goods/getFile?fileId=132" mode></image>
+		</swiper-item>
+	</swiper>
+	<view class="text-box">
+		<view class="_h3">关于我们</view>
+		<view>
+			<view class="text-item">
+				<view class="text-h6">公司名称</view><text class="text-text">思维创造（天津）信息科技有限公司</text>
+			</view>
+			<view class="text-item">
+				<view class="text-h6">地址</view><text class="text-text">智慧山南塔308室</text>
+			</view>
+			<view class="text-item">
+				<view class="text-h6">电话</view><text class="text-text">0026-4861235</text>
+			</view>
+			<view class="text-item">
+				<view class="text-h6">邮箱</view><text class="text-text">4586411@163.com</text>
+			</view>
+      	<view class="text-item">
+				<view class="text-h6">网址</view><text class="text-text">www.baidu.cn</text>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,24 @@
+<view>
+	<swiper class="swiper"  autoplay="{{false}}" interval="{{2000}}" duration="{{500}}">
+		<swiper-item>
+			<image src="https://www.tjsichuang.cn:1443/api/product/goods/getFile?fileId=127" mode></image>
+		</swiper-item>
+	</swiper>
+	<view class="text-box">
+		<view class="_h3">构造参数/墙面</view>
+		<view>
+			<view class="text-item">
+				<view class="text-h6">外墙</view><text class="text-text">200mm厚现浇混凝土</text>
+			</view>
+			<view class="text-item">
+				<view class="text-h6">分户墙</view><text class="text-text">180/200mm厚现浇混凝土</text>
+			</view>
+			<view class="text-item">
+				<view class="text-h6">户内卧室墙</view><text class="text-text">100mm厚混凝土高精砌块</text>
+			</view>
+			<view class="text-item">
+				<view class="text-h6">其他分室墙</view><text class="text-text">100mm蒸汽加压混凝土条板</text>
+			</view>
+		</view>
+	</view>
+</view>

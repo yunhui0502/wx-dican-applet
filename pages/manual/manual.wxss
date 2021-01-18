@@ -1,0 +1,3 @@
+image{width:100%;height:100%}.text-box{padding:20px}.text-h6{font-size:16px;font-family:PingFang SC;font-weight:700;color:#333}.text-text{font-size:14px;font-family:PingFang SC;color:#333}.text-item{margin:35px 0}.swiper{
+  height: 340rpx;
+}

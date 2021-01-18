@@ -1,0 +1,101 @@
+<!--pages/project/index.wxml-->
+<!-- <view class="sou" bindtap="sousuo">
+		<image bindtap="swiTab" src="../../static/sousuo.png" class="sao-sou" />
+		<input bindinput="getCode" type="text"  class="input-sou" />
+</view> -->
+
+<!-- <view class="box">
+	<view data-id="{{item.id}}" data-index="index" wx:for="{{Itemslist}}" bindtap="goHome"  class="nav_right_items">
+		<view>{{item.projectName}}</view>
+	</view>
+</view> -->
+<!-- <view class="button-box">
+<view> -->
+   <button class="button-cs" bindtap="translate">选择城市</button>
+<!-- </view>
+</view> -->
+
+
+<view class="box">
+
+	<view class="box-view">
+
+		<view  data-id="1" bindtap="goHome" class="box-length image-1">
+			<view class="length-text">CITY PARK</view>
+			<view>1872</view>
+		</view>
+
+		<view data-id="1" class="box-height image-2">
+			<view class="height-text">
+				GREEN
+			</view>
+			<view>
+				果岭
+			</view>
+		</view>
+
+		<view data-id="1" class="box-height image-3">
+			<view class="height-text">MANSION</view>
+			<view>
+				雍祥府
+			</view>
+		</view>
+
+	</view>
+
+	<view class="box-view">
+		<view data-id="1" class="box-length image-4">
+			<view class="length-text">
+				NET VAllEY
+			</view>
+			<view>
+				网谷
+			</view>
+		</view>
+
+		<view class="box-image">
+			<!-- <image src="../../static/construction.png"></image> -->
+			<view class="box-text">天津公司</view>
+		</view>
+
+		<view data-id="1" class="box-length image-5">
+			<view class="length-text">
+				BASEMENT
+			</view>
+			<view>
+				北塘
+			</view>
+		</view>
+	</view>
+
+	<view class="box-view">
+		<view data-id="1" class="box-height image-6">
+			<view class="height-text">
+				BACON HIll
+			</view>
+			<view>
+				贝肯山
+			</view>
+		</view>
+
+		<view data-id="1" class="box-height image-7">
+			<view class="height-text">
+				CULLINAA
+			</view>
+			<view>天玺</view>
+		</view>
+
+		<view data-id="1" class="box-length image-8">
+			<view class="length-text">
+				CONTINUED
+			</view>
+			<view>
+				待续
+			</view>
+		</view>
+	</view>
+</view>
+
+<import src="../../model/model.wxml"/>
+<!-- <view class="infoText">{{province}} {{city}} {{county}}</view> -->
+<template is="areaData" data="{{...item}}"/>

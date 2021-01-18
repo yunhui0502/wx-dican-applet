@@ -1,0 +1,17 @@
+<!-- pages/tabbar/index.wxml -->
+<view hidden="{{currentTab == -1? false: true}}">
+  <component_car/> 
+</view>
+<!-- <view hidden="{{currentTab == 0? false: true}}">
+  <general-situation-survey/> 
+</view>
+<view hidden="{{currentTab == 1? false: true}}">
+  <tree-select/> 
+</view> -->
+
+<view class="nav-tabs">
+  <view class="tab-list {{currentTab == idx ? 'active' : 'default' }}" wx:for="{{items}}" wx:key="prototype" wx:for-index="idx" wx:for-item="item" data-current="{{idx}}" bindtap="swichNav">
+    <text class="tab-text" wx:for-index="idx" data-current="{{idx}}" src="{{currentTab == idx ? item.selectedIconPath : item.iconPath }}">{{item.text}}</text>
+    <image class="iconPath" wx:for-index="idx" data-current="{{idx}}" src="{{currentTab == idx ? item.selectedIconPath : item.iconPath }}"></image>
+  </view>
+</view>

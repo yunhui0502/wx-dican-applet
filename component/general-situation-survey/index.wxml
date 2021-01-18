@@ -1,0 +1,10 @@
+<!--component/general-situation-survey/index.wxml-->
+<!--项目概况-->
+<view class="text-box">
+	<!-- <image wx:for="{{Urllist}}" data-index="{{index}}" style="height:{{auto[index].height}}px" bindload="autoImage" src="{{item}}" mode></image> -->
+  <view class="add-wrap"hover-class="plus-hover">
+    <!-- <image src="/img/jiangqie.png"></image> -->
+  </view>
+  <!-- <scroll-view scroll-y>{{htmlSnip}}</scroll-view> -->
+  <rich-text space="nbsp" nodes="{{htmlSnip}}"></rich-text>
+</view>

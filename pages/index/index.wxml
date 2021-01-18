@@ -1,0 +1,65 @@
+<!--pages/index/index.wxml-->
+<!-- <view wx:if="{{control}}" style="height:{{phoneHeight}}px;">
+  <image class="background" src="../../static/shanp.png" mode></image>
+	<button bindtap="showPopup" class="primary-button" >进入首页</button>
+	<popup bind:myevent='onMyevent' id='popup' 
+      title='请输入公司编号' 
+      btn_no='取消' 
+      btn_ok='确定'
+      bind:error="_error"  
+      bind:success="_success">
+  </popup>
+</view> -->
+
+<!-- <view class="container">
+	<swiper direction='vertical' class="swiper" style="height:{{phoneHeight-50}}px" indicator-dots="{{true}}" autoplay="{{false}}" interval="{{2000}}" duration="{{500}}">
+		<swiper-item wx:for="{{activeList}}" >
+			<image data-index="{{index}}" style="height:{{auto[index].height}}px" bindload="autoImage" src="{{item.imageUrl}}" mode></image>
+		</swiper-item>
+	</swiper>
+</view> -->
+
+<!-- <view>
+	<view wx:for="{{activeList}}">
+		<image data-index="{{index}}" style="height:{{auto[index].height}}px" bindload="autoImage" src="{{item.imageUrl}}" mode></image>
+	</view>
+</view> -->
+
+<view class="page-body">
+  <!-- <view class="Position">
+	 <view class="classify-top">
+	  <image bindtap="classifyClick" class="classify-image" src="../../static/fl.png"></image>
+	 </view>
+
+	 <view wx:if="{{classify}}" class="classify-box">
+			<view bindtap="navClick" data-index="0" class="classify-text"> · 项目概况</view>
+			<view style="padding-bottom: 15rpx;" bindtap="navClick" data-index="1" class="classify-text"> · 产品手册</view>
+		</view>
+	</view> -->
+  <!-- 遮罩层
+	<view wx:if="{{classify}}" bindtap="navMasked" class="Masked">
+	   
+	</view> -->
+
+  <swiper class="swiper" style="height:{{phoneHeight}}px"  vertical="{{vertical}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block>
+     	<swiper-item wx:for="{{activeList}}" >
+			<image data-index="{{index}}"  bindload="autoImage" src="{{item.imageUrl}}" mode></image>
+		</swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view style="position: fixed;bottom: 0;">
+	<view class="nav-tabs" style="height:60px">
+		<view class="tab-list {{currentTab == idx ? 'active' : 'default' }}" wx:for="{{items}}" wx:key="prototype" wx:for-index="idx" wx:for-item="item" data-current="{{idx}}" bindtap="swichNav">
+			<text class="tab-text" wx:for-index="idx" data-current="{{idx}}" src="{{currentTab == idx ? item.selectedIconPath : item.iconPath }}">{{item.text}}</text>
+			<image class="iconPath" wx:for-index="idx" data-current="{{idx}}" src="{{currentTab == idx ? item.selectedIconPath : item.iconPath }}"></image>
+		</view>
+		
+	</view>
+	<view style="height:{{heightlimit-48}}px">
+		
+	</view>
+</view>

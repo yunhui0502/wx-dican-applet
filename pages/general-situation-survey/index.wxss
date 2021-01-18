@@ -1,0 +1,29 @@
+/* pages/general-situation-survey/index.wxss */
+image {
+  width: 100%;
+  height: 100%
+}
+img {
+  width: 100%;
+  /* height: 100% */
+}
+
+.add-wrap {
+  height: 60rpx;
+  width: 60rpx;
+  position: fixed;
+  bottom: 160rpx;
+  right: 30rpx;
+  background-color: #f6f6f6;
+  border-radius: 50%;
+}
+  
+.add-wrap image {  
+  width:60rpx;
+  height:60rpx;
+}
+
+.text-box {
+ padding: 0 32rpx;
+ /* padding-bottom: 68rpx; */
+}

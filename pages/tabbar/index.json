@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "公园18072",
+  "usingComponents": {
+    "component_car": "../index/index",
+    "general-situation-survey": "/component/general-situation-survey/index",
+    "tree-select": "/component/TreeSelect/TreeSelect"
+  }
+}

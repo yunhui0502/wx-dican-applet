@@ -1,0 +1,65 @@
+<!--pages/TreeS/index.wxml-->
+<!-- 主盒子 -->
+<view class="sousuo-box">
+	<image bindtap="bindtapclassify" class="sao-image" src="../../static/hfl.png"></image>
+	<view class="sou" bindtap="sousuo">
+		<image src="../../static/sousuo.png" class="sao-sou" />
+		<input type="text" class="input-sou" placeholder="请输入您要搜索的内容" bindblur="getsousuo" value="{{inputval}}" />
+	</view>
+	<view bindtap="cancel">取消</view>
+</view>
+<!-- <view class="sou" bindtap="sousuo">
+			<image bindtap="swiTab" src="../../static/sousuo.png" class="sao-sou" />
+			<input bindinput="getCode" type="text"  class="input-sou" />
+		</view> -->
+<loading hidden="{{loadingHidden}}">
+	玩命加载中...
+</loading>
+<view wx:if="{{ifPages}}">
+	<view hidden="{{!loadingHidden}}" class="container">
+		<!-- 左侧栏 -->
+		<view style="height:{{phoneHeight}}px;" class='nav_left'>
+			<view wx:for="{{activeList}}" :key="{{item.id}}" class="nav_left_items {{curNav == item.categoryId ? 'active' : ''}}" bindtap="switchRightTab" data-id="{{item.categoryId}}">
+				{{item.categoryName}}
+			</view>
+			<!-- <view class="nav_left_items {{curNav == 1 ? 'active' : ''}}" bindtap="switchRightTab" data-id="1">
+        住宅
+      </view>
+      <view class="nav_left_items {{curNav == 2 ? 'active' : ''}}" bindtap="switchRightTab" data-id="2">
+        配建
+      </view>
+      <view class="nav_left_items {{curNav == 3 ? 'active' : ''}}" bindtap="switchRightTab" data-id="3">
+        地下车库
+      </view> -->
+		</view>
+		<!-- 右侧栏 -->
+		<view class="nav_right">
+			<view style=" width: 100%;">
+				<view bindtap="swiTab" data-item="{{item}}" bindtap="swiTab" data-index="{{index}}" wx:for="{{slist1}}" class="nav_right_items">
+					<image class="{{item.type=='3'?'gray':''}}" src="{{item.imageUrl}}"></image>
+					<text>{{item.categoryName}}</text>
+				</view>
+			</view>
+			<view wx:if="{{curNav==2}}">
+				<view wx:for="{{slist2}}" class="nav_right_items">
+					<image bindtap="swiTab" src="{{item.src}}"></image>
+					<text>{{item.text}}</text>
+				</view>
+			</view>
+			<view wx:if="{{curNav==3}}">
+				<view wx:for="{{slist3}}" class="nav_right_items">
+					<image bindtap="swiTab" src="{{item.src}}"></image>
+					<text>{{item.text}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+<view wx:if="{{!ifPages}}" class="banner-centent" bindtap="pagesTab" wx:for="{{list}}" wx:key="index" data-type="{{item.type}}" data-id="{{item.categoryId}}">
+	<!-- 商品 -->
+	<view class="banner-item">
+		<text>{{item.categoryName}}</text>
+	</view>
+</view>

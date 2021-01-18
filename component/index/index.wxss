@@ -1,0 +1,18 @@
+/* component/index/index.wxss */
+.container {
+  font-size: 14px;
+  line-height: 24px
+}
+
+image {
+  width: 100%;
+  height: 100%
+}
+
+.page-body{padding: 0;margin:0;}
+/* swiper{height:100vh;}
+.swiper-item{height:100vh;}
+.demo-text-1{background-color:rgb(228, 95, 18)}
+.demo-text-2{background-color:rgb(28, 207, 28);}
+.demo-text-3{background-color:rgb(83, 83, 206);}
+.demo-text-4{background-color:rgb(221, 42, 147);} */

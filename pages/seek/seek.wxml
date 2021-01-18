@@ -1,0 +1,23 @@
+<!--pages/seek/seek.wxml-->
+<view class="seek">
+  <!-- 搜索历史 -->
+  <view class="seek-sou">
+    <view class="sou" >
+			<image  src="../../static/sousuo.png" class="sao-sou" />
+			<input  type="text"  class="input-sou" placeholder="请输入您要搜索的内容" bindblur="getsousuo" value="{{inputval}}" />
+		</view>
+    <!-- <view class="seek-header">
+      <image class="seek-tu" src="../../static/sousuo.png" />
+      <input type="text" class="seek-input" placeholder="请输入您要搜索的内容" bindblur="getsousuo" value="{{inputval}}" />
+    </view> -->
+    <!-- <view class="seek-table" bindtap="quxiao">取消</view> -->
+  </view>
+  <view class="banner-centent" bindtap="swiTab" wx:for="{{list}}" wx:key="index" data-type="{{item.type}}" data-id="{{item.categoryId}}">
+    <!-- 商品 -->
+       <view class="banner-item">
+          <text>{{item.categoryName}}</text>
+          <view style="margin-top: 20rpx;font-size: 20rpx;">{{item.parentNameStr}}</view>
+       </view>
+  </view>
+
+</view>

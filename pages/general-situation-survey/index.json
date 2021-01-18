@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "项目概况",
+  "usingComponents": {
+    "parser":"/component/parser.min/parser"
+  }
+}

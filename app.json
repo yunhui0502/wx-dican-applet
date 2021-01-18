@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/cover-plan/index",
+    "pages/tabbar/index",
+    "pages/TreeSelect/TreeSelect",
+    "pages/manual/manual",
+    "pages/withregard/withregard",
+    "pages/design/design",
+    "pages/login/login",
+    "pages/project/index",
+    "pages/TreeS/index",
+    "pages/seek/seek",
+    "pages/general-situation-survey/index",
+    "pages/index/index",
+    "pages/cs/cs"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/general-situation-survey/index",
+        "iconPath": "static/loupan.png",
+        "selectedIconPath": "static/loupan_remenl.png",
+        "text": "项目概况"
+      },
+      {
+        "pagePath": "pages/TreeSelect/TreeSelect",
+        "iconPath": "static/shiyongshouce2.png",
+        "selectedIconPath": "static/02.png",
+        "text": "产品手册"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}
